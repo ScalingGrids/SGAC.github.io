@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <title>Tableau Dashboard</title>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 </head>
 
 <body>
@@ -290,6 +293,19 @@
             </div>
         </div> -->
         <!-- Newsletter End -->
+	<div class="tableauPlaceholder" style="width: 800px; height: 600px;"></div>
+
+	<script type="text/javascript">
+  	var placeholderDiv = document.getElementsByClassName("tableauPlaceholder")[0];
+ 	var vizUrl = "https://public.tableau.com/app/profile/shreekant.pukale/viz/Book2_16831754941250/OverviewDashboard?publish=yes";
+
+	var options = {
+	hideTabs: true,
+	hideToolbar: true
+	};
+	
+	var viz = new tableau.Viz(placeholderDiv, vizUrl, options);
+</script>
 
 
         <!-- Projects Start -->
